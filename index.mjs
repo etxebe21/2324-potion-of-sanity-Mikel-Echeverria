@@ -17,7 +17,29 @@ const execute = async () => {
 
         //CREAMOS CALDERO DE POCIONES
         const cauldron = new Cauldron(ingredients);
-        console.log(`Calderos: `, cauldron);
+        //console.log(`Calderos: `, cauldron);
+
+        //Creamos las pociones
+        const potion1 = cauldron.createPotion("Bear Claws", "Bee");
+        showPotion(potion1);
+
+        const potion2 = cauldron.createPotion("Chickens Egg", "Chaurus Egg");
+        showPotion(potion2);
+
+        const potion3 = cauldron.createPotion("Chaurus Egg", "Bleeding Crown");
+        showPotion(potion3);
+
+        const potion4 = cauldron.createPotion("NightSade", "Ectoplasm");
+        showPotion(potion4);
+
+        function showPotion(potion) {
+
+            console.log(`${potion.name}`);
+            console.log(`Value:            ${potion.value}`);
+            console.log(`Weight:           ${potion.weight}`);
+            console.log(`Time:             ${potion.time}`);
+            console.log(`------------------------------------`)
+        }
        
 
     }
