@@ -14,7 +14,7 @@ export default class Cauldron
 
         const common_effects = ingredient1.findCommonEffects(ingredient2);
 
-        if(common_effects.lenght === 0)
+        if(common_effects.length === 0)
         return Potion.failed();
 
         if(isPotionOfSanity(ingredient1, ingredient2)) {
