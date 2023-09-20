@@ -1,6 +1,6 @@
 import Effect from "./effects.mjs";
 
-class Ingredient
+export default class Ingredient
 {
     constructor(name, effects, value, weight)
     {

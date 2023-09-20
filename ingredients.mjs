@@ -2,7 +2,7 @@ import Ingredient from "./ingredient.mjs";
 
 
 
-class Ingredients
+export default class Ingredients
 {
     constructor(ingredients)
     {
