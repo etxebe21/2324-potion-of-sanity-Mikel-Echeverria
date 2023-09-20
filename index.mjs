@@ -17,7 +17,7 @@ const execute = async () => {
 
         //CREAMOS CALDERO DE POCIONES
         const cauldron = new Cauldron(ingredients);
-        console.log(cauldron);
+        console.log(`Calderos: `, cauldron);
        
 
     }
