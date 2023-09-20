@@ -10,7 +10,7 @@ export default class Ingredients
     }
 
     static load(data) {
-        return new Ingredients(data.ingredients.map(Ingredient.from));
+        return new Ingredients(data.map(Ingredient.from));
     }
 
 }

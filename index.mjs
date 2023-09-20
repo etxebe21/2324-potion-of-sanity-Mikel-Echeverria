@@ -5,10 +5,15 @@ const execute = async () => {
 
     try
     {
-        const data = await getData();
+        const responseData = await getData();
+        
+        const data = responseData["ingredients"];
+        showIngredients(data);
 
         //CREAMOS LOS INGREDIENTES
         const ingredients = Ingredients.load(data);
+        console.log(ingredients);
+       
 
     }
     catch(error)
@@ -19,3 +24,14 @@ const execute = async () => {
 }
 
 execute();
+
+const showIngredients = (data) => {
+
+    data.forEach(element => {
+        const effects = element.effects;
+        console.log(`${element.name} --> Efectos: ${effects}`);
+        
+    });
+
+}
+
